@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { scroll-behavior: smooth; }
+body { @apply bg-cream text-ink font-body antialiased; }
+html.dark body { @apply bg-[#0B0D12] text-zinc-100; }
+::selection { background: #1D4ED8; color: white; }
+
+/* custom scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-thumb { background: #1D4ED8; border-radius: 99px; }
+::-webkit-scrollbar-track { background: #F7F7F5; }
+html.dark ::-webkit-scrollbar-track { background: #14161c; }
+
+/* ——— Global dark overrides (class strategy) ——— */
+html.dark .bg-cream { background-color: #0f1117 !important; }
+html.dark .bg-paper { background-color: #161a25 !important; }
+html.dark .bg-white { background-color: #161a25 !important; }
+html.dark .bg-white\/90 { background-color: rgba(22,26,37,0.9) !important; }
+html.dark .hover\:bg-cream:hover { background-color: #1c2030 !important; }
+html.dark .hover\:bg-white:hover { background-color: #1e2333 !important; }
+
+html.dark .text-ink { color: #f4f4f5 !important; }
+html.dark .text-ink\/60 { color: rgb(244 244 245 / 0.62) !important; }
+html.dark .text-ink\/55 { color: rgb(244 244 245 / 0.55) !important; }
+html.dark .text-ink\/50 { color: rgb(244 244 245 / 0.5) !important; }
+html.dark .text-ink\/40 { color: rgb(244 244 245 / 0.42) !important; }
+html.dark .text-ink\/35 { color: rgb(244 244 245 / 0.36) !important; }
+html.dark .text-ink\/30 { color: rgb(244 244 245 / 0.3) !important; }
+html.dark .text-ink\/70 { color: rgb(244 244 245 / 0.72) !important; }
+
+html.dark .border-ink\/5 { border-color: rgb(255 255 255 / 0.06) !important; }
+html.dark .border-ink\/10 { border-color: rgb(255 255 255 / 0.1) !important; }
+html.dark .border-ink\/20 { border-color: rgb(255 255 255 / 0.14) !important; }
+html.dark .divide-ink\/5 > :not([hidden]) ~ :not([hidden]) { border-color: rgb(255 255 255 / 0.06) !important; }
+html.dark .from-ink { --tw-gradient-from: #1e2333 var(--tw-gradient-from-position) !important; }
+html.dark .to-zinc-700 { --tw-gradient-to: #2a3147 var(--tw-gradient-to-position) !important; }
+
+html.dark .shadow-soft { box-shadow: 0 10px 40px rgba(0,0,0,0.35) !important; }
+html.dark .shadow-card { box-shadow: 0 8px 30px rgba(0,0,0,0.28) !important; }
+
+html.dark input.bg-cream, html.dark textarea.bg-cream, html.dark select.bg-cream { background-color: #1c2030 !important; border-color: rgb(255 255 255 / 0.1) !important; color: #f4f4f5; }
+html.dark input.bg-cream::placeholder, html.dark textarea.bg-cream::placeholder { color: rgb(244 244 245 / 0.38); }
+
+html.dark .bg-ink { background-color: #0a0c10 !important; }
+
+/* Light-mode nav polish: ensure nav links never go low-contrast on white */
+.bg-white .text-ink\/60 { color: rgb(82 82 91) !important; } /* zinc-600 */

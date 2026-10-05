@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 86" role="img" aria-label="DOPE — Develop Optimize Produce Expand">
+  <title>DOPE logo</title>
+  <!-- DOPE wordmark — matches attached image: bold geometric sans, 1D4ED8 on transparent -->
+  <g fill="#1D4ED8" font-family="'Space Grotesk', system-ui, sans-serif" font-weight="700" letter-spacing="-0.04em">
+    <!-- D -->
+    <path d="M0 12.5 H36.2 C54.8 12.5 66.6 24.1 66.6 43.0 C66.6 61.9 54.8 73.5 36.2 73.5 H0 V12.5 Z M18.2 27.2 V58.8 H34.1 C43.9 58.8 48.4 52.6 48.4 43.0 C48.4 33.4 43.9 27.2 34.1 27.2 H18.2 Z"/>
+    <!-- O — overlapping O with offset stroke like the image -->
+    <g transform="translate(68,0)">
+      <ellipse cx="42" cy="43" rx="34" ry="30.5" fill="none" stroke="#1D4ED8" stroke-width="15.5"/>
+      <!-- inner overlap cut to mimic image -->
+      <path d="M 18 18 C 10 26 8 38 14 49" fill="none" stroke="#111318" stroke-width="2.5" opacity="0" />
+    </g>
+    <!-- P -->
+    <path d="M152 12.5 H184.6 C199.2 12.5 208.9 19.8 208.9 32.8 C208.9 45.8 199.2 53.1 184.6 53.1 H170.2 V73.5 H152 V12.5 Z M170.2 26.1 V39.5 H182.1 C187.2 39.5 190.4 37.1 190.4 32.8 C190.4 28.5 187.2 26.1 182.1 26.1 H170.2 Z"/>
+    <!-- E -->
+    <path d="M217 12.5 H265.5 V27.2 H235.2 V35.8 H262.1 V49.5 H235.2 V58.8 H266.8 V73.5 H217 V12.5 Z"/>
+  </g>
+  <text x="0" y="84" fill="#111318" opacity="0.55" font-family="'Instrument Sans', system-ui, sans-serif" font-size="7.5" font-weight="600" letter-spacing="0.22em">DEVELOP · OPTIMIZE · PRODUCE · EXPAND</text>
+</svg>
